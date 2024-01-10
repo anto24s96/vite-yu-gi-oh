@@ -12,8 +12,10 @@ export default {
     </header>
 </template>
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 header {
-    background-color: white;
+    background-color: $white_color;
     padding: 30px 20px;
 
     .container-logo-title {
