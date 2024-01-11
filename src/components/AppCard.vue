@@ -7,7 +7,7 @@ export default {
 }
 </script>
 <template lang="">
-    <div class="card">
+    <div class="card col-2 m-3">
         <!-- <img v-for="cardImgs in cards.card_images" :src="cardImgs.image_url_small" alt="images"> --> 
         <img :src="cards.card_images[0].image_url_small" alt="images"> <!-- MODO PIU SEMPLICE ATTRAVERSO L'INDICE -->
         <div id="card_name">{{ cards.name }}</div>
@@ -18,8 +18,6 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .card {
-    margin: 20px;
-    width: calc(100% / 5 - 40px);
     text-align: center;
     background-color: #d48f38;
 
