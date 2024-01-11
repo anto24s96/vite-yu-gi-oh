@@ -8,7 +8,8 @@ export default {
 </script>
 <template lang="">
     <div class="card">
-        <img v-for="cardImgs in cards.card_images" :src="cardImgs.image_url_small" alt="images">
+        <!-- <img v-for="cardImgs in cards.card_images" :src="cardImgs.image_url_small" alt="images"> --> 
+        <img :src="cards.card_images[0].image_url_small" alt="images"> <!-- MODO PIU SEMPLICE ATTRAVERSO L'INDICE -->
         <div id="card_name">{{ cards.name }}</div>
         <div id="card_archetype">{{ cards.archetype }}</div>
     </div>
