@@ -1,5 +1,5 @@
 <script>
-import axios from 'axios';
+/* import axios from 'axios'; */
 import AppCard from "./AppCard.vue";
 
 import { store } from '../store.js';
@@ -13,16 +13,6 @@ export default {
         return {
             store
         }
-    },
-    methods: {
-        getCharactersList() {
-            axios.get(store.endpoint).then((response) => {
-                this.store.charactersData = response.data.data
-            })
-        }
-    },
-    created() {
-        this.getCharactersList();
     },
 }
 </script>
